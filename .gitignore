@@ -1,0 +1,22 @@
+# Secrets and local environment
+.env
+.env.local
+.env.*
+!.env.example
+
+# Data and private state
+*.db
+*.db-wal
+*.db-shm
+*.db.bak-*
+
+# IDE, local tools and generated files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.idea/
+.claude/
+CLAUDE.md
+.pytest_cache/
+.DS_Store
