@@ -1,0 +1,12 @@
+# Прямые зависимости проекта. Транзитивные pip доставит сам.
+# Установка:  .venv\Scripts\python.exe -m pip install -r requirements.txt
+
+aiogram==3.30.0
+google-genai==2.16.0
+
+# HTTP-клиент для опроса статусов Robokassa (robokassa.py). Приезжает и с aiogram,
+# но мы импортируем его напрямую — значит зависимость прямая, и версия наша.
+aiohttp==3.14.3
+
+# Секреты грузятся из .env (см. .env.example)
+python-dotenv==1.2.2
